@@ -1,0 +1,20 @@
+{{#each errors}}
+ <div class="red lighten-4 black-text alert alert-danger" 
+  style="margin:10px 0 10px 0px;padding:10px">{{text}}</div>
+{{/each}}
+
+{{#if success_msg}}
+  <div class="green lighten-2 black-text alert alert-danger" 
+  style="margin:10px 0 10px 0px;padding:10px">{{success_msg}}</div>
+{{/if}}
+
+{{#if error_msg}}
+  <div class="red lighten-4 black-text alert alert-danger" 
+  style="margin:10px 0 10px 0px;padding:10px">{{error_msg}}</div>
+{{/if}}
+
+{{#if error}}
+  <div class="red lighten-4 black-text alert alert-danger" 
+  style="margin:10px 0 10px 0px;padding:10px">{{error}}</div>
+{{/if}}
+

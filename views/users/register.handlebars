@@ -1,0 +1,31 @@
+<h3 style="text-align:center">Register</h3>
+ <div class="row">
+    <form class="col s12" method="POST" action="/users/register">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix deep-purple-text">create</i>
+          <input id="name" type="text" class="validate" name="name" value={{name}}>
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix teal-text" >email</i>
+          <input id="email" type="email" class="validate" name="email" value={{email}}>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix cyan-text">contacts</i>
+          <input id="password" type="password" class="validate" name="password" value={{password}}>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix  light-blue-text ">contacts</i>
+          <input id="password2" type="password" class="validate" name="password2" value={{password2}}>
+          <label for="password2">Confirm Password</label>
+        </div>
+         <button class="btn waves-effect waves-light" type="submit">SIGN UP
+    <i class="material-icons right">send</i>
+  </button>
+      </div>
+    </form>
+  </div>
+        

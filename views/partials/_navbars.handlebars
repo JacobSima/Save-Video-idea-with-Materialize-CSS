@@ -1,0 +1,42 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/ideas">Ideas</a></li>
+  <li><a href="/ideas/add">Add Idea</a></li>
+</ul>
+<nav>
+  <div class="container">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">VidJot</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+       {{#if user}}
+          <li><a href="/users/logout">Logout</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ideas<i class="material-icons right">arrow_drop_down</i></a></li>
+       {{else}}
+         <li><a href="/users/login">Login</a></li>
+         <li><a href="/users/register">Register</a></li>
+       {{/if}}
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/"><i class="material-icons green-text">home</i>Home</a></li>
+  <li><a href="/about"><i class="material-icons blue-text">feedback</i>About</a></li>
+  {{#if user}}
+    <li><a href="/"><i class="material-icons red-text">people_outline</i>Logout</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/ideas"><i class="material-icons brown-text">local_library</i>Ideas</a></li>
+    <li><a href="/ideas/add"><i class="material-icons grey-text">library_add</i>Add Idea</a></li>
+  {{else}}
+     <li><a href="/users/login"><i class="material-icons  cyan-text">people_outline</i>Login</a></li>
+     <li><a href="/users/register"><i class="material-icons teal-text">group_add</i>Register</a></li>
+  {{/if}}
+  </ul>
+
+

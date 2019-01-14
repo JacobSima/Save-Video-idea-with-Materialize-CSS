@@ -1,0 +1,21 @@
+<h3 style="text-align:center">Login</h3>
+ <div class="row">
+    <form class="col s12" method="POST" action="/users/login">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix teal-text" >email</i>
+          <input id="email" type="email" class="validate" name="email" value={{email}}>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix cyan-text">contacts</i>
+          <input id="password" type="password" class="validate" name="password">
+          <label for="password">Password</label>
+        </div>
+        
+         <button class="btn waves-effect waves-light" type="submit">LOGIN
+    <i class="material-icons right">send</i>
+  </button>
+      </div>
+    </form>
+  </div>
